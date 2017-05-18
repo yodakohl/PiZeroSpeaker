@@ -27,10 +27,10 @@ module zero_standoff(){
 			translate([pi_hole_distance_y/2,pi_hole_distance_x/2,-20])cylinder(r=4,h=21);
 		}
 		
-		translate([-pi_hole_distance_y/2,-pi_hole_distance_x/2,-10])cylinder(r=1.5,h=21);
-		translate([-pi_hole_distance_y/2,pi_hole_distance_x/2,-10])cylinder(r=1.5,h=21);
-		translate([pi_hole_distance_y/2,-pi_hole_distance_x/2,-10])cylinder(r=1.5,h=21);
-		translate([pi_hole_distance_y/2,pi_hole_distance_x/2,-10])cylinder(r=1.5,h=21);
+		translate([-pi_hole_distance_y/2,-pi_hole_distance_x/2,-10])cylinder(r=1,h=21);
+		translate([-pi_hole_distance_y/2,pi_hole_distance_x/2,-10])cylinder(r=1,h=21);
+		translate([pi_hole_distance_y/2,-pi_hole_distance_x/2,-10])cylinder(r=1,h=21);
+		translate([pi_hole_distance_y/2,pi_hole_distance_x/2,-10])cylinder(r=1,h=21);
 	}
 	
 }
@@ -123,7 +123,7 @@ module grill(){
 		
 		//Logo
 		translate([25, 35,1]) {
-			rotate([0,0,-90])scale([0.8,0.8,3])text("nyumaya.com", font = "Liberation Sans:style=Bold Italic");
+			%rotate([0,0,-90])scale([0.8,0.8,3])text("nyumaya.com", font = "Liberation Sans:style=Bold Italic");
 		}
 		
 	}
