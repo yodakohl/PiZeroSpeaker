@@ -1,3 +1,5 @@
+use <PiZero_1.2.scad>
+
 $fn=90;
 radius=20;
 size=40;
@@ -123,7 +125,7 @@ module grill(){
 		
 		//Logo
 		translate([25, 35,1]) {
-			%rotate([0,0,-90])scale([0.8,0.8,3])text("nyumaya.com", font = "Liberation Sans:style=Bold Italic");
+			rotate([0,0,-90])scale([0.8,0.8,3])text("nyumaya.com", font = "Liberation Sans:style=Bold Italic");
 		}
 		
 	}
@@ -132,7 +134,7 @@ module grill(){
 
 
 speaker_box();
-
+translate([40,2,2]) rotate([0,0,90]) PiZeroBody();
 //translate([0,0,50]) grill();
 
 
